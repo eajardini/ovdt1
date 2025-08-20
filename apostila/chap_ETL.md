@@ -89,15 +89,15 @@ Isso vai iniciar o *download* do PDI.
 
 3.  Execute o arquivo:
 
-    1.  **Linux***: ./spoon.sh*
+    1.  **Linux**: ./spoon.sh
 
-    2.  **Windows***: Spoon.bat*
+    2.  **Windows**: Spoon.bat
 
 4.  Atenção: como o programa é em linguagem *Java*, sua execução inicial
     pode demorar um tempo considerável.
 
 5.  Após o software ter sido executado, você verá a seguinte tela:\
-    ![image](imagem/spoon01)
+    ![image](imagem/spoon01.png)
 
 Transformando um arquivo CSV
 ----------------------------
@@ -108,7 +108,7 @@ campo será salvo na primeira posição do arquivo XLS.
 
  
 
-Iremos usar o arquivo *01\_PedidoClienteProduto.csv* disponível no AVA.
+Iremos usar o arquivo *02\_PedidoClienteProduto.csv* disponível no AVA.
 Salve este arquivo em um diretório que será usado durante os exercícios.
 
  
@@ -130,10 +130,9 @@ Para realizar a transformação, faça:
 5.  Em seguida, clique no botão *Get Fields* localizado na parte
     inferior da janela.
 
-6.  Feito isso, clique no botão *Preview* para ver os dados do arquivo.
+6.  Feito isso, clique no botão *Preview* para ver os dados do arquivo.  
 
-7.  Para finalizar, clique no botão *Ok*.\
-    ------
+7.  Para finalizar, clique no botão *Ok*.
 
 8.  Em seguida, escolha o **componente** ***Transform -\> Add
     sequence*** com um duplo clique.
@@ -153,8 +152,7 @@ Para realizar a transformação, faça:
         ***ktr***.
 
 11. Clique no botão *Preview* (formato de um olho), na barra de
-    ferramentas localizada na parte Superior.\
-    ------
+    ferramentas localizada na parte Superior.    
 
 12. Agora vamos adicionar o **componente** ***Output*** ***-\>***
     ***Microsoft excel output***.
@@ -267,8 +265,7 @@ devemos realizar os seguintes passos:
 5.  Faça o teste de conexão clicando no botão *Test* na parte inferior.
 
 6.  Atribua o nome de ***ovtd1\_erp*** no campo *Connection Name* na
-    parte superior da janela.\
-    -----
+    parte superior da janela.      
 
 7.  Para o **banco de dados ovtd1\_dw**, preencha os campos para
     conexão: *Host Name, Database Name, Port Number, Username e
@@ -321,9 +318,9 @@ O ETL é feito da seguinte maneira:
         *SELECT codigo\_cliente , nome\_cliente , endereco , cidade ,
         cep , uf FROM cliente*
 
-4.  Clique no botão *Preview*.\
-    -----
-
+4.  Clique no botão *Preview*.
+    
+   
 5.  Selecione o **componente** ***Design -\> Data Warehouse -\>
     Dimension lookup/update***
 
@@ -397,8 +394,8 @@ Os passos são:
         *SELECT codigo\_vendedor , nome\_vendedor , salario\_fixo ,
         faixa\_comissao FROM vendedor*
 
-5.  Clique no botão *Preview*.\
-    -----
+5.  Clique no botão *Preview*.
+    
 
 6.  Selecione o **componente** ***Design -\> Data Warehouse -\>
     Dimension lookup/update***
@@ -522,8 +519,8 @@ Os passos são:
         valor\_custo , qtde\_minima , quantidade , comissao\_produto
         FROM .produto*
 
-5.  Clique no botão *Preview*.\
-    -----
+5.  Clique no botão *Preview*.
+    
 
 6.  Selecione o **componente** ***Design -\> Data Warehouse -\>
     Dimension lookup/update***
